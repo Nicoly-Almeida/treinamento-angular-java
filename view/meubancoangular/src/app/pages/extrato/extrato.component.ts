@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExtratoComponent implements OnInit {
 
+  exibir: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }
