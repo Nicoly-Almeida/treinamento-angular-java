@@ -15,6 +15,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { CadastrarClienteComponent } from './pages/cadastrar-cliente/cadastrar-cliente.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContasComponent } from './pages/contas/contas.component'
 
 @NgModule({
   declarations: [
@@ -30,12 +32,14 @@ import { CadastrarClienteComponent } from './pages/cadastrar-cliente/cadastrar-c
     ButtonComponent,
     ClientesComponent,
     CadastrarClienteComponent,
+    ContasComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
