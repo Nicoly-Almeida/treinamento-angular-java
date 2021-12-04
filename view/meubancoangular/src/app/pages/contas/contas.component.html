@@ -30,7 +30,7 @@
       <td>{{ conta.cliente.nome }}</td>
       <td>{{ conta.numero }}</td>
       <td>{{ conta.agencia }}</td>
-      <td>R$ {{ conta.saldo }},00</td>
+      <td>{{ conta.saldo | currency: 'BRL'}},00</td>
     </tr>
   </tbody>
 </table>

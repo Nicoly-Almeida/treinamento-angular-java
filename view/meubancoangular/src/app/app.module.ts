@@ -14,9 +14,9 @@ import { CheckboxComponent } from './components/checkbox/checkbox.component';
 import { ButtonComponent } from './components/button/button.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientesComponent } from './pages/clientes/clientes.component';
-import { CadastrarClienteComponent } from './pages/cadastrar-cliente/cadastrar-cliente.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ContasComponent } from './pages/contas/contas.component'
+import { ContasComponent } from './pages/contas/contas.component';
+import { CadastrarEditarClienteComponent } from './pages/clientes/cadastrar-editar-cliente/cadastrar-editar-cliente.component'
 
 @NgModule({
   declarations: [
@@ -31,8 +31,8 @@ import { ContasComponent } from './pages/contas/contas.component'
     CheckboxComponent,
     ButtonComponent,
     ClientesComponent,
-    CadastrarClienteComponent,
     ContasComponent,
+    CadastrarEditarClienteComponent,
   ],
   imports: [
     BrowserModule,

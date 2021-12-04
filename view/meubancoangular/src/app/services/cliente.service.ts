@@ -16,7 +16,7 @@ export class ClienteService {
     return this.http.get<Cliente[]>(this.api)
   }
 
-  createClients() {
-
+  createClient(cliente: Cliente) {
+    return this.http.post<Cliente>(this.api, cliente)
   }
 }
