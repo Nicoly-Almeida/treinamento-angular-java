@@ -19,4 +19,8 @@ export class ClienteService {
   createClient(cliente: Cliente) {
     return this.http.post<Cliente>(this.api, cliente)
   }
+
+  deleteClient(id: number) {
+    return this.http.delete(`${this.api}/${id}`)
+  }
 }

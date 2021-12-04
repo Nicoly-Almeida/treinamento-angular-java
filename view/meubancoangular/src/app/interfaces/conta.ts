@@ -3,7 +3,7 @@ import { Cliente } from "./cliente";
 export interface Conta {
   agencia: "string",
   cliente: Cliente,
-  id: 0,
+  id: number,
   numero: "string",
-  saldo: 0
+  saldo: number
 }
