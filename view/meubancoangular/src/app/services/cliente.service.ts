@@ -16,15 +16,11 @@ export class ClienteService {
     return this.http.get<Cliente[]>(this.api)
   }
 
-  clientById(id: number) {
-    return this.http.get(`${this.api}/${id}`)
-  }
-
   createClient(cliente: Cliente) {
     return this.http.post<Cliente>(this.api, cliente)
   }
 
   deleteClient(id: number) {
-    return this.http.delete(`${this.api}/${id}`)
+    return this.http.delete(`${this.api}${id}`)
   }
 }

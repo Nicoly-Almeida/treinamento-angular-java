@@ -26,8 +26,6 @@ export class ClientesComponent implements OnInit {
     });
   }
 
-
-
   deletar(id: number) {
     Swal.fire({
       title: 'Você tem certeza que deseja deletar?',
@@ -47,7 +45,11 @@ export class ClientesComponent implements OnInit {
           );
           this.listarTodosClientes()
         }, error => {
-          console.error(error)
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Não é possível deletar esse usuário',
+          })
         })
 
       }

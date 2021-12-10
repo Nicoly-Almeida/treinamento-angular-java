@@ -22,7 +22,7 @@
       formGroup.get('valor')?.hasError('required')">Campo obrigatório</small>
     </div>
   </div>
-
-  <button [disabled]="!formGroup.valid" type="submit" class=" mt-4 btn btn-dark d-flex justify-content-center"
-    titulo="Cadastrar"> Sacar </button>
+  <div class="d-flex justify-content-center">
+    <button [disabled]="!formGroup.valid" type="submit" class=" mt-4 btn btn-dark" titulo="Cadastrar"> Sacar </button>
+  </div>
 </form>
