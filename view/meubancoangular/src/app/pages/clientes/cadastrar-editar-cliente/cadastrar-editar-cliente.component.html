@@ -7,10 +7,14 @@
     <div class="col">
       <label for="exampleFormControlInput1" class="form-label"> Nome</label>
       <input type="text" class="form-control" formControlName="nome">
+      <small class="text-danger mb-2" *ngIf="formGroup.get('nome')?.errors &&
+      formGroup.get('nome')?.hasError('required')">Campo obrigatório</small>
     </div>
     <div class="col">
       <label for="exampleFormControlInput1" class="form-label"> Email</label>
       <input type="email" class="form-control" formControlName="email">
+      <small class="text-danger mb-2" *ngIf="formGroup.get('email')?.errors &&
+      formGroup.get('email')?.hasError('required')">Campo obrigatório</small>
     </div>
 
   </div>
@@ -18,12 +22,16 @@
     <div class="col">
       <label for="exampleFormControlInput1" class="form-label"> CPF</label>
       <input type="text" class="form-control" formControlName="cpf">
+      <small class="text-danger mb-2" *ngIf="formGroup.get('cpf')?.errors &&
+      formGroup.get('cpf')?.hasError('required')">Campo obrigatório</small>
     </div>
     <div class="col">
       <label for="exampleFormControlInput1" class="form-label"> Observações</label>
       <input type="text" class="form-control" formControlName="observacoes">
     </div>
   </div>
-  <button [disabled]="!formGroup.valid" type="submit" class="btn btn-dark d-flex justify-content-center"
-    titulo="Cadastrar"> Cadastrar </button>
+  <div class="d-flex justify-content-center">
+    <button [disabled]="!formGroup.valid" type="submit" class="btn btn-dark mt-4" titulo="Cadastrar"> Cadastrar
+    </button>
+  </div>
 </form>

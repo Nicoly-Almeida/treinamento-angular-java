@@ -26,6 +26,8 @@ export class ClientesComponent implements OnInit {
     });
   }
 
+
+
   deletar(id: number) {
     Swal.fire({
       title: 'Você tem certeza que deseja deletar?',

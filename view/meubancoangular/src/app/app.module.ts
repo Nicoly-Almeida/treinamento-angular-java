@@ -16,7 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ClientesComponent } from './pages/clientes/clientes.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContasComponent } from './pages/contas/contas.component';
-import { CadastrarEditarClienteComponent } from './pages/clientes/cadastrar-editar-cliente/cadastrar-editar-cliente.component'
+import { CadastrarEditarClienteComponent } from './pages/clientes/cadastrar-editar-cliente/cadastrar-editar-cliente.component';
+import { TransferenciaComponent } from './pages/transferencia/transferencia.component';
+import { CadastrarEditarContaComponent } from './pages/contas/cadastrar-editar-conta/cadastrar-editar-conta.component'
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { CadastrarEditarClienteComponent } from './pages/clientes/cadastrar-edit
     ClientesComponent,
     ContasComponent,
     CadastrarEditarClienteComponent,
+    TransferenciaComponent,
+    CadastrarEditarContaComponent,
   ],
   imports: [
     BrowserModule,
